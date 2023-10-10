@@ -12,14 +12,14 @@ repositories {
     mavenCentral()
 }
 
-        //dependencies {
-   // testImplementation(platform("org.junit:junit-bom:5.9.1"))
-    //testImplementation("org.junit.jupiter:junit-jupiter")
-//}
+        dependencies {
+   testImplementation(platform("org.junit:junit-bom:5.9.1"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
+}
 
-//tasks.test {
-    //useJUnitPlatform()
-//}
+tasks.test {
+    useJUnitPlatform()
+}
 dependencies {
     testImplementation group: 'org.testng', name: 'testng', version: '7.1.0'
 
